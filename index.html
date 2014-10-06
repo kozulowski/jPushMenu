@@ -204,6 +204,10 @@ jQuery(document).ready(function($) {
 			</footer>
 		</div>
 		
+		<div id="fixed" class="cbp-spmenu-push" style="position: fixed; left: 0; top: 0">
+			<h1>fixed div</h1>
+		</div>
+		
 		<a target="_blank" href="https://github.com/takien/jPushMenu"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 		
 		<!--load jQuery, required-->
@@ -214,7 +218,7 @@ jQuery(document).ready(function($) {
 		<!--call jPushMenu, required-->
 		<script>
 		jQuery(document).ready(function($) {
-			$('.toggle-menu').jPushMenu();
+			$('.toggle-menu').jPushMenu({fixedElements: '#fixed'});
 		});
 		</script>
 		

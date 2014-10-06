@@ -114,7 +114,7 @@
 }
 
 .cbp-spmenu-push-toleft {
-	left: -240px;
+	left: -240px !important;
 }
 
 /* Transitions */

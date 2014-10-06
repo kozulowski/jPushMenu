@@ -18,6 +18,7 @@
 		$(this).click(function() {
 			var target         = '',
 			push_direction     = '';
+			fixed = $(o.fixedElements);
 			
 		
 			if($(this).is('.'+o.showLeftClass)) {
@@ -41,6 +42,7 @@
 			
 			if($(this).is('.'+o.pushBodyClass)) {
 				$('body').toggleClass( 'cbp-spmenu-push-'+push_direction );
+				fixed.toggleClass( 'cbp-spmenu-push-'+push_direction );
 			}
 			
 			/* disable all other button*/
@@ -94,6 +96,7 @@
 		showBottomClass : 'menu-bottom',
 		menuOpenClass   : 'cbp-spmenu-open',
 		pushBodyClass   : 'push-body',
+		fixedElements : '',
 		closeOnClickOutside: true,
 		closeOnClickInside: true,
 		closeOnClickLink: true
